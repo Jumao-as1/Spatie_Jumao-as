@@ -6,12 +6,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 
-Route::get('/home', function () {
-    return view('home.index');
-})->name('home');
+// Route::get('/home', function () {
+//     return view('home.index');
+// })->name('home');
 
 Route::get('/events', function () {
     return view('events.index');
